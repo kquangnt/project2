@@ -1,0 +1,15 @@
+<% provide :title, @user.name %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>
+        <%= @user.name %>
+      </h1>
+      <h3><%= t("email") %><%= @user.email %></h3>
+      <h3><%= t("admin?") %><%= check_box_tag(:is_admin, 1, @user.is_admin?, disabled: true) %></h3>
+      <h3><%= t("created_at") %><<%= @user.created_at %>/h3>
+    </section>
+
+    <%= link_to t("back"), users_path %>
+  </aside>
+</div>

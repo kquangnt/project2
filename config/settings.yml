@@ -1,0 +1,4 @@
+per_page:
+  user: 10
+book_index: "250x350>"
+book_show: "325x475>"
